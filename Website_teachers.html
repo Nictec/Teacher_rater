@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Teacher Rating</title>
+	
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body>
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Teachers</a></h1>
+	 	</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">HOME</a></li>
+				<li><a href="#/teachers.html">TEACHERS</a></li>
+				<li><a href="#/contact.html">CONTACT</a></li>
+				<li><a href="#/about.html">ABOUT</a>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2>Information</h2>
+			<br>
+			<button class="accordion">Privatgymnasium St. Rupert</button>
+            <div class="panel">
+      			<table>
+      				<tr>
+      					<th>Teachers</th>
+      					<th>Ratings</th>
+      				</tr>
+      				<tr>
+      					<td>Example</td>
+      					<td>Example</td>
+      				</tr>
+      			</table>
+			</div>
+			<br>
+			<button class="accordion">PdC Borg Radstadt</button>
+			<div class="panel">
+  				<table>
+  					<tr>
+  						<th>Teachers</th>
+  						<th>Ratings</th>
+  					</tr>
+  					<tr>
+  						<td>Example</td>
+  						<td>Example</td>
+  					</tr>
+  				</table>
+			</div>
+			<br>
+			<button class="accordion">....</button>
+			<div class="panel">
+  				<p></p>
+			</div>
+
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+    			acc[i].onclick = function(){
+        			this.classList.toggle("active");
+        			var panel = this.nextElementSibling;
+        			if (panel.style.display === "block") {
+            			panel.style.display = "none";
+        			} else {	
+           				 panel.style.display = "block";
+        			}
+    			}
+			}
+			</script>
+
+		</div>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">LoetkolbenLudwig</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
